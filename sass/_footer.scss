@@ -1,0 +1,93 @@
+.site-footer{
+	background: $blue;
+	padding: 2em;
+	background-image: url(../assets/images/footer-bg.jpg);
+	background-repeat: no-repeat;
+	background-position: 95% 2em;
+	font-size: .8em;
+
+
+	h2{
+		color: #fff;
+		text-shadow: none;
+		font-size: 1.6em;
+		margin-bottom: .5em;
+	}
+
+	p{
+		color: #fff;
+		font-size: 1em;
+		line-height: 1.6em;
+		color: lighten($light-blue, 50%);
+	}
+
+	.footer-left{
+		width: 50%;
+		float: left;
+	}
+
+	.footer-right{
+		width: 45%;
+		float: right;
+		margin-left: 5%;
+	}
+
+	.footer-nav{
+		font-weight: 100;
+
+		li{
+			margin-bottom: 1em;
+			text-transform: uppercase;
+
+			a{ 
+				color: lighten($light-blue, 50%);
+
+				&:hover{
+					color: #fff;
+				}
+			}
+
+		}
+	}
+
+	.footer-search{
+		margin: .8em 0;
+		font-size: 1em;
+
+		.search{
+			background: $light-blue;
+			border: none;
+			padding: .75em;
+			color: #fff;
+			text-transform: uppercase;
+		}
+		.search-submit{
+			padding: .75em 1.25em;
+			border: none;
+		}
+	}
+
+	.footer-social{
+		padding-top: 1em;
+
+		li{
+			display: inline-block;
+			margin-right: 10px;
+
+			a{
+				display: block;
+				background: #eee;
+				text-indent: -9999em;
+				height: 35px;
+				width: 35px;
+			}
+		}
+	}
+
+	.copyright{
+		clear: both;
+		padding-top: 2em;
+		font-size: 1em;
+		color: lighten($light-blue, 10%);
+	}
+}

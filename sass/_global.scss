@@ -1,0 +1,92 @@
+$red: #e1482f;
+$blue: #072837;
+$light-blue: #39535f;
+$green: #86cfc9;
+
+img{
+	vertical-align: bottom;
+}
+
+.two-wide{
+	@include pie-clearfix;
+
+	.column{
+		width: 50%;
+		float: left;
+	}
+}
+
+.three-wide{
+	@include pie-clearfix;
+
+
+	.column{
+		width: 33.3333%;
+		float: left;
+	}
+}
+
+.button{
+	padding: .5em 1em;
+	text-decoration: none;
+	color: #000;
+	font-size: 1.6em;
+	font-family: "Dosis";
+	font-weight: 600;
+
+	a{
+		color: #fff;
+	}
+
+	&.red-bg:hover{
+		background: lighten($red, 5%);
+	}
+
+	&.green-bg:hover{
+		background: lighten($green, 5%);
+	}
+
+	&.blue-bg:hover{
+		background: lighten($blue, 5%);
+	}
+}
+
+.vertical-align{
+	display: table;
+
+	.column{
+		display: table-cell;
+		color: #fff;
+		float: none;
+		vertical-align: middle;
+		padding: 4em;
+
+		a{
+			margin-top: 1em;
+			display: block;
+		}
+	}
+}
+
+.red-bg{
+	background: $red;
+}
+
+.blue-bg{
+	background: $blue;
+}
+
+.green-bg{
+	background: $green;
+}
+
+input[type="submit"]{
+	cursor: pointer;
+	background: $red;
+	color: #fff;
+	text-transform: uppercase;
+
+	&:hover{
+		background: lighten($red, 5%);
+	}
+}
